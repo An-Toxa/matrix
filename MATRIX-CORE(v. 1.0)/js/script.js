@@ -18,7 +18,6 @@ $(document).ready(function() {
 	var rndValue;
 	
 	function matrixCreate(sX,sY){
-//#########(NEED ADD CODE) inspection for the argument value!#########//
 		var cellNumber = 1; //create LOCAL var unique key for create unique key for the cell
 			for (var y = 1; y-1<sY; y++){
 				for (var x = 1; x-1<sX; x++){
@@ -31,7 +30,7 @@ $(document).ready(function() {
 	matrixCreate(sizeX,sizeY); // starting matrix
 //-----------------------ENDING--------------------//
 
-	$('.matrix-cell:first').attr('data-cell-content','house'); // change content of element  with 0  on "house"
+	$('.matrix-cell:first').attr('data-cell-content','marker');
 
 	function dataSample(className,dataName,value){ //func sample data of attributes 
 			return $(""+className+"["+dataName+" = '"+arguments[2]+"']"); //sample attribute 
@@ -100,11 +99,11 @@ $(document).ready(function() {
 		
 		for (var i = 1; i<arr.length; i++){
 			dataSample(className,"data-cell-number",arr[i]).css({'background':'lime'})
-			if (dataSample(className,"data-cell-number",arr[i]).data('cell-content') == "house"){
+			if (dataSample(className,"data-cell-number",arr[i]).data('cell-content') == "marker"){
 				alert('yes!!!');
 			}
 		}
-		if (dataSample(className,"data-cell-number",arr[0]).data('cell-content') == "house"){
+		if (dataSample(className,"data-cell-number",arr[0]).data('cell-content') == "marker"){
 				alert('yes!!!');
 			}
 	}
