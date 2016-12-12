@@ -107,7 +107,10 @@ $(document).ready(function() {
 				alert('yes!!!');
 			}
 	}
-	
+	var keySelf = 8224;
+	var product = "MilkShake";
+	alert (keySelf);
+	console.log(product);
 	
 	
 	matrixAnalyzer();
