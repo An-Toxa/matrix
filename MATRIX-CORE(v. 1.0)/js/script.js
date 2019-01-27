@@ -85,7 +85,7 @@ $(document).ready(function() {
 	}
 //-----------------------ENDING----------------------//
 	
-	
+	alert("sdfds");
 	function actionBorders (x,y){
 		var arr = new Array(); 
 		arr[0] = $(""+className+"[data-x="+(x)+"][data-y="+(y)+"]").data('cell-number');
